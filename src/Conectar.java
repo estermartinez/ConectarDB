@@ -7,7 +7,8 @@ public class Conectar {
 		// TODO Auto-generated method stub
 
 		try{
-			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost", "root", "caracoles");
+			
+			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/login", "root", "caracoles");
 			System.out.println("Conexion exitosa");
 		}catch(Exception e){
 			System.out.println(e);
